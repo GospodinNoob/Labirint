@@ -4,10 +4,23 @@
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
         >
-    <TextView
-            android:layout_width="fill_parent"
+    <Button
+            android:id="@+id/buttonToSettings1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World, MyActivity"
-            />
+            android:onClick="onClickToSettings1"
+            android:text="@string/to_settings" />
+    <Button
+            android:id="@+id/buttonAboutProgram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickToAboutProgram"
+            android:text="@string/to_about_program" />
+    <Button
+            android:id="@+id/buttonExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickExit"
+            android:text="@string/to_exit" />
 </LinearLayout>
 

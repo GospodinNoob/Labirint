@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Labirint</string>
+    <string name="to_settings">Старт игры</string>
+    <string name="to_about_program">О программе</string>
+    <string name="to_exit">Выход</string>
 </resources>

@@ -3,5 +3,105 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1">
 
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/scroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:orientation="vertical"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:gravity="center">
+
+                <Button
+                    android:id="@+id/buttonMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickMain"
+                    android:text="@string/settings_main" />
+                <Button
+                    android:id="@+id/buttonWalls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickWalls"
+                    android:text="@string/settings_walls" />
+                <Button
+                    android:id="@+id/buttonRivers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickRivers"
+                    android:text="@string/settings_rivers" />
+                <Button
+                    android:id="@+id/buttonWeapon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickWeapon"
+                    android:text="@string/settings_weapons" />
+                <Button
+                    android:id="@+id/buttonMonsters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickMonsters"
+                    android:text="@string/settings_monsters" />
+                <Button
+                    android:id="@+id/buttonDoors"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickDoors"
+                    android:text="@string/settings_doors" />
+                <Button
+                    android:id="@+id/buttonTeleports"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickTeleports"
+                    android:text="@string/settings_teleports" />
+                <Button
+                    android:id="@+id/buttonLands"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickLands"
+                    android:text="@string/settings_lands" />
+                <Button
+                    android:id="@+id/buttonOtherObjects"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickOtherObjects"
+                    android:text="@string/settings_other_objects" />
+                <Button
+                    android:id="@+id/buttonOtherItems"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickOtherItems"
+                    android:text="@string/settings_other_items" />
+
+                <Button
+                    android:id="@+id/buttonToGame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickToGame"
+                    android:text="@string/settings_accept" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_weight="2">
+
+    </LinearLayout>
+
+</LinearLayout>
 </LinearLayout>

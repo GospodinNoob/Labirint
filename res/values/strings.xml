@@ -4,4 +4,15 @@
     <string name="to_settings">Старт игры</string>
     <string name="to_about_program">О программе</string>
     <string name="to_exit">Выход</string>
+    <string name="settings_walls">Стены</string>
+    <string name="settings_weapons">Оружие и броня</string>
+    <string name="settings_rivers">Водные объекты</string>
+    <string name="settings_other_objects">Другие объекты</string>
+    <string name="settings_other_items">Другие предметы</string>
+    <string name="settings_lands">Местности</string>
+    <string name="settings_doors">Двери и ключи</string>
+    <string name="settings_main">Главное</string>
+    <string name="settings_teleports">Порталы</string>
+    <string name="settings_monsters">Монстры</string>
+    <string name="settings_accept">Принять настройки</string>
 </resources>

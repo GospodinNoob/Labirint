@@ -47,6 +47,8 @@ public class SettingsActivity extends Activity {
     public void onClickToGame(View view)
     {
         GameSettings gameSettings = new GameSettings();
+        //int buffer =
+        gameSettings.setHeight(10);
         //gameSettings.setHeight(Integer.parseInt(sizeSquareLabirint.getText().toString()));
         //gameSettings.setWeidht(Integer.parseInt(sizeSquareLabirint.getText().toString()));
         //gameSettings.setNumberPlayer(Integer.parseInt(countPlayers.getText().toString()));

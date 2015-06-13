@@ -22,71 +22,105 @@
                 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                       android:orientation="vertical"
                       android:layout_width="fill_parent"
-                      android:layout_height="fill_parent"
-                      android:gravity="center">
+                      android:layout_height="fill_parent">
 
-                <Button
-                    android:id="@+id/buttonMain"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="onClickMain"
-                    android:text="@string/settings_main" />
-                <Button
-                    android:id="@+id/buttonWalls"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="onClickWalls"
-                    android:text="@string/settings_walls" />
-                <Button
-                    android:id="@+id/buttonRivers"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="onClickRivers"
-                    android:text="@string/settings_rivers" />
-                <Button
-                    android:id="@+id/buttonWeapon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="onClickWeapon"
-                    android:text="@string/settings_weapons" />
-                <Button
-                    android:id="@+id/buttonMonsters"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="onClickMonsters"
-                    android:text="@string/settings_monsters" />
-                <Button
-                    android:id="@+id/buttonDoors"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="onClickDoors"
-                    android:text="@string/settings_doors" />
-                <Button
-                    android:id="@+id/buttonTeleports"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="onClickTeleports"
-                    android:text="@string/settings_teleports" />
-                <Button
-                    android:id="@+id/buttonLands"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="onClickLands"
-                    android:text="@string/settings_lands" />
-                <Button
-                    android:id="@+id/buttonOtherObjects"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="onClickOtherObjects"
-                    android:text="@string/settings_other_objects" />
-                <Button
-                    android:id="@+id/buttonOtherItems"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="onClickOtherItems"
-                    android:text="@string/settings_other_items" />
+                    <TextView
+                            android:id="@+id/text_type"
+                            android:layout_width="fill_parent"
+                            android:layout_height="18dp"
+                            android:capitalize="characters"
+                            android:text="Режим игры"
+                            android:layout_alignParentEnd="true"
+                            android:textSize="15dp"/>
 
-                <Button
+                    <Switch
+                            android:id="@+id/switch_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textOff="Режим админа"
+                            android:textOn="Режим без админа" />
+
+                    <TextView
+                            android:id="@+id/text_size"
+                            android:layout_width="fill_parent"
+                            android:layout_height="18dp"
+                            android:capitalize="characters"
+                            android:text="Размер лабиринта(х*х)"
+                            android:layout_alignParentEnd="true"
+                            android:textSize="15dp"/>
+
+                    <EditText
+                            android:id="@+id/edit_size_labirint"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+
+                    <TextView
+                            android:id="@+id/text_counter_players"
+                            android:layout_width="fill_parent"
+                            android:layout_height="18dp"
+                            android:capitalize="characters"
+                            android:text="Количество игроков"
+                            android:layout_alignParentEnd="true"
+                            android:textSize="15dp"/>
+
+                   <EditText
+                            android:id="@+id/edit_players_counter"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+
+                    <TextView
+                            android:id="@+id/text_count_chests"
+                            android:layout_width="fill_parent"
+                            android:layout_height="18dp"
+                            android:capitalize="characters"
+                            android:text="Количество кладов"
+                            android:layout_alignParentEnd="true"
+                            android:textSize="15dp"/>
+
+                    <EditText
+                            android:id="@+id/edit_count_chests"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+
+                    <TextView
+                            android:id="@+id/text_exit"
+                            android:layout_width="fill_parent"
+                            android:layout_height="18dp"
+                            android:capitalize="characters"
+                            android:text="Выход"
+                            android:layout_alignParentEnd="true"
+                            android:textSize="15dp"/>
+
+                    <Switch
+                            android:id="@+id/switch_exit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textOff="Случайная клетка"
+                            android:textOn="Дыра во внешней стене" />
+
+                    <TextView
+                            android:id="@+id/text_walls"
+                            android:layout_width="fill_parent"
+                            android:layout_height="18dp"
+                            android:capitalize="characters"
+                            android:text="Массовость стенок"
+                            android:layout_alignParentEnd="true"
+                            android:textSize="15dp"/>
+
+                    <SeekBar
+                            android:id="@+id/seekBar_walls"
+                            android:max="100"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView1"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="26dp"/>
+
+
+                    <Button
                     android:id="@+id/buttonToGame"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -94,13 +128,6 @@
                     android:text="@string/settings_accept" />
             </LinearLayout>
         </ScrollView>
-    </LinearLayout>
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                  android:orientation="vertical"
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent"
-                  android:layout_weight="2">
-
     </LinearLayout>
 
 </LinearLayout>

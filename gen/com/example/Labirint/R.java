@@ -15,20 +15,23 @@ public final class R {
     }
     public static final class id {
         public static final int buttonAboutProgram=0x7f050001;
-        public static final int buttonDoors=0x7f050009;
         public static final int buttonExit=0x7f050002;
-        public static final int buttonLands=0x7f05000b;
-        public static final int buttonMain=0x7f050004;
-        public static final int buttonMonsters=0x7f050008;
-        public static final int buttonOtherItems=0x7f05000d;
-        public static final int buttonOtherObjects=0x7f05000c;
-        public static final int buttonRivers=0x7f050006;
-        public static final int buttonTeleports=0x7f05000a;
-        public static final int buttonToGame=0x7f05000e;
+        public static final int buttonToGame=0x7f050011;
         public static final int buttonToSettings1=0x7f050000;
-        public static final int buttonWalls=0x7f050005;
-        public static final int buttonWeapon=0x7f050007;
+        public static final int edit_count_chests=0x7f05000b;
+        public static final int edit_players_counter=0x7f050009;
+        public static final int edit_size_labirint=0x7f050007;
         public static final int scroll=0x7f050003;
+        public static final int seekBar_walls=0x7f05000f;
+        public static final int switch_exit=0x7f05000d;
+        public static final int switch_type=0x7f050005;
+        public static final int textView1=0x7f050010;
+        public static final int text_count_chests=0x7f05000a;
+        public static final int text_counter_players=0x7f050008;
+        public static final int text_exit=0x7f05000c;
+        public static final int text_size=0x7f050006;
+        public static final int text_type=0x7f050004;
+        public static final int text_walls=0x7f05000e;
     }
     public static final class layout {
         public static final int about=0x7f030000;

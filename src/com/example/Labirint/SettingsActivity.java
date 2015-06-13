@@ -43,8 +43,27 @@ public class SettingsActivity extends Activity {
     }
 
 
+
     public void onClickToGame(View view)
     {
+        GameSettings gameSettings = new GameSettings();
+        gameSettings.setHeight(Integer.parseInt(sizeSquareLabirint.getText().toString()));
+        gameSettings.setWeidht(Integer.parseInt(sizeSquareLabirint.getText().toString()));
+        gameSettings.setNumberPlayer(Integer.parseInt(countPlayers.getText().toString()));
+        gameSettings.setNumberTreasure(Integer.parseInt(countChests.getText().toString()));
+        if (switchTypeGame.isChecked()) {
+            gameSettings.setType(GameTypes.Admin);
+        }
+        else{
+            gameSettings.setType(GameTypes.OneByOne);
+        }
+        if(switchTypeExit.isChecked()){
 
+        }
+        {
+
+        }
+        Intent intent = new Intent(SettingsActivity.this, Game.class);
+        startActivity(intent);
     }
 }

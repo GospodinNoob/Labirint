@@ -4,12 +4,28 @@ public class GameSettings {
 	
 	//height, weidht - длинна, ширина
 	//numberplayer, numbertreasure; - колво игроков, кладов
-	//type = тип карты
+	//type = тип игры
 	private Integer height, weidht, numberplayer, numbertreasure;
+	private Integer walldensity, numberfloor;
+	private boolean isexitinwall;
 	private GameTypes type;
 	
 	public GameSettings() {
+		numberfloor = 1;
+		height = 4;
+		weidht = 5;
 		
+	}
+	
+	public String getDebugStateString(){
+		String s = "Labirint settings was set:";
+		s += "( " + height.toString() + " x " + weidht.toString() + " )\t";
+		s += "players - " + numberplayer.toString() + ";";
+		s += "treasure - " + numbertreasure.toString() + "\t";
+		s += "number of floor - " + numberfloor.toString() + "\r\n";
+		s += "del this from final version\r\n";
+		s += "it contain in GameSettings.getDebugStateString()\r\n";
+		return s;
 	}
 	
 	public Integer getNumberPlayer() {
@@ -42,7 +58,21 @@ public class GameSettings {
 	public void setType(GameTypes type) {
 		this.type = type;
 	}
+
+	public Integer getWallDensity() {
+		return walldensity;
+	}
+
+	public void setWallDensity(Integer walldensity) {
+		this.walldensity = walldensity;
+	}
 	
-	
+	public Integer getNumberFloor() {
+		return numberfloor;
+	}
+
+	public void setNumberFloor(Integer numberfloor) {
+		this.numberfloor = numberfloor;
+	}
 	
 }

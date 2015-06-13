@@ -60,9 +60,9 @@ public class SettingsActivity extends Activity {
         if(switchTypeExit.isChecked()){
 
         }
-        {
 
-        }
+        System.err.print(gameSettings.getDebugStateString());
+        
         Intent intent = new Intent(SettingsActivity.this, Game.class);
         startActivity(intent);
     }

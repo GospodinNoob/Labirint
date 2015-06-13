@@ -27,7 +27,7 @@ public class SettingsActivity extends Activity {
     public SeekBar densityWalls;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
 
         switchTypeGame = (Switch)findViewById(R.id.switch_type);
         switchTypeExit = (Switch)findViewById(R.id.switch_exit);
@@ -47,23 +47,23 @@ public class SettingsActivity extends Activity {
     public void onClickToGame(View view)
     {
         GameSettings gameSettings = new GameSettings();
-        gameSettings.setHeight(Integer.parseInt(sizeSquareLabirint.getText().toString()));
-        gameSettings.setWeidht(Integer.parseInt(sizeSquareLabirint.getText().toString()));
-        gameSettings.setNumberPlayer(Integer.parseInt(countPlayers.getText().toString()));
-        gameSettings.setNumberTreasure(Integer.parseInt(countChests.getText().toString()));
-        if (switchTypeGame.isChecked()) {
-            gameSettings.setType(GameTypes.Admin);
-        }
-        else{
-            gameSettings.setType(GameTypes.OneByOne);
-        }
-        if(switchTypeExit.isChecked()){
+        //gameSettings.setHeight(Integer.parseInt(sizeSquareLabirint.getText().toString()));
+        //gameSettings.setWeidht(Integer.parseInt(sizeSquareLabirint.getText().toString()));
+        //gameSettings.setNumberPlayer(Integer.parseInt(countPlayers.getText().toString()));
+        //gameSettings.setNumberTreasure(Integer.parseInt(countChests.getText().toString()));
+        //if (switchTypeGame.isChecked()) {
+         //   gameSettings.setType(GameTypes.Admin);
+       // }
+       // else{
+        //    gameSettings.setType(GameTypes.OneByOne);
+       // }
+       // if(switchTypeExit.isChecked()){
+//
+ //       }
 
-        }
-
-        System.err.print(gameSettings.getDebugStateString());
+   //     System.err.print(gameSettings.getDebugStateString());
         
-        Intent intent = new Intent(SettingsActivity.this, Game.class);
+        Intent intent = new Intent(SettingsActivity.this, GameActivity.class);
         startActivity(intent);
     }
 }

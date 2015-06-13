@@ -15,4 +15,5 @@
     <string name="settings_teleports">Порталы</string>
     <string name="settings_monsters">Монстры</string>
     <string name="settings_accept">Принять настройки</string>
+    <string name="to_game">Игра</string>
 </resources>

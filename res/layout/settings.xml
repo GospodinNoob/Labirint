@@ -41,7 +41,7 @@
                             android:textOn="Режим без админа" />
 
                     <TextView
-                            android:id="@+id/text_size"
+                            android:id="@+id/text_size_square"
                             android:layout_width="fill_parent"
                             android:layout_height="18dp"
                             android:capitalize="characters"
@@ -50,7 +50,7 @@
                             android:textSize="15dp"/>
 
                     <EditText
-                            android:id="@+id/edit_size_labirint"
+                            android:id="@+id/edit_size_labirint_square"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:ems="10" />

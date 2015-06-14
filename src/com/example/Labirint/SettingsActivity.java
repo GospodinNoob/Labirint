@@ -29,6 +29,10 @@ public class SettingsActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
 
+        super.onCreate(savedInstanceState);
+
+        setContentView(R.layout.settings);
+
         switchTypeGame = (Switch)findViewById(R.id.switch_type);
         switchTypeExit = (Switch)findViewById(R.id.switch_exit);
 
@@ -37,9 +41,7 @@ public class SettingsActivity extends Activity {
         sizeSquareLabirint = (EditText)findViewById(R.id.edit_size_labirint_square);
 
         densityWalls = (SeekBar)findViewById(R.id.seekBar_walls);
-        super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.settings);
     }
 
 
@@ -47,18 +49,16 @@ public class SettingsActivity extends Activity {
     public void onClickToGame(View view)
     {
         GameSettings gameSettings = new GameSettings();
-        //int buffer =
-        gameSettings.setHeight(10);
-        //gameSettings.setHeight(Integer.parseInt(sizeSquareLabirint.getText().toString()));
-        //gameSettings.setWeidht(Integer.parseInt(sizeSquareLabirint.getText().toString()));
-        //gameSettings.setNumberPlayer(Integer.parseInt(countPlayers.getText().toString()));
-        //gameSettings.setNumberTreasure(Integer.parseInt(countChests.getText().toString()));
-        //if (switchTypeGame.isChecked()) {
-         //   gameSettings.setType(GameTypes.Admin);
-       // }
-       // else{
-        //    gameSettings.setType(GameTypes.OneByOne);
-       // }
+        gameSettings.setHeight(Integer.parseInt(sizeSquareLabirint.getText().toString()));
+        gameSettings.setWeidht(Integer.parseInt(sizeSquareLabirint.getText().toString()));
+        gameSettings.setNumberPlayer(Integer.parseInt(countPlayers.getText().toString()));
+        gameSettings.setNumberTreasure(Integer.parseInt(countChests.getText().toString()));
+        if (switchTypeGame.isChecked()) {
+            gameSettings.setType(GameTypes.Admin);
+        }
+        else{
+            gameSettings.setType(GameTypes.OneByOne);
+       }
        // if(switchTypeExit.isChecked()){
 //
  //       }
